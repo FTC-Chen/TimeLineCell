@@ -18,6 +18,7 @@
 		7BAF54EA1E01138900DFF5B0 /* TimeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BAF54E81E01138900DFF5B0 /* TimeTableViewCell.m */; };
 		7BAF54EB1E01138900DFF5B0 /* TimeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7BAF54E91E01138900DFF5B0 /* TimeTableViewCell.xib */; };
 		7BAF54EE1E0114A900DFF5B0 /* TimeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BAF54ED1E0114A900DFF5B0 /* TimeModel.m */; };
+		7BAF54F01E014ACB00DFF5B0 /* 时间线进度.png in Resources */ = {isa = PBXBuildFile; fileRef = 7BAF54EF1E014ACB00DFF5B0 /* 时间线进度.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,7 @@
 		7BAF54E91E01138900DFF5B0 /* TimeTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TimeTableViewCell.xib; sourceTree = "<group>"; };
 		7BAF54EC1E0114A900DFF5B0 /* TimeModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimeModel.h; sourceTree = "<group>"; };
 		7BAF54ED1E0114A900DFF5B0 /* TimeModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimeModel.m; sourceTree = "<group>"; };
+		7BAF54EF1E014ACB00DFF5B0 /* 时间线进度.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "时间线进度.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +124,7 @@
 				7BAF54B61E010E1900DFF5B0 /* Assets.xcassets */,
 				7BAF54B81E010E1900DFF5B0 /* LaunchScreen.storyboard */,
 				7BAF54BB1E010E1900DFF5B0 /* Info.plist */,
+				7BAF54EF1E014ACB00DFF5B0 /* 时间线进度.png */,
 				7BAF54AA1E010E1900DFF5B0 /* Supporting Files */,
 			);
 			path = TimeLineCell;
@@ -220,7 +223,6 @@
 				TargetAttributes = {
 					7BAF54A61E010E1900DFF5B0 = {
 						CreatedOnToolsVersion = 8.1;
-						DevelopmentTeam = 2L98437J77;
 						ProvisioningStyle = Automatic;
 					};
 					7BAF54BF1E010E1900DFF5B0 = {
@@ -260,6 +262,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7BAF54F01E014ACB00DFF5B0 /* 时间线进度.png in Resources */,
 				7BAF54EB1E01138900DFF5B0 /* TimeTableViewCell.xib in Resources */,
 				7BAF54BA1E010E1900DFF5B0 /* LaunchScreen.storyboard in Resources */,
 				7BAF54B71E010E1900DFF5B0 /* Assets.xcassets in Resources */,
@@ -439,10 +442,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 2L98437J77;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = TimeLineCell/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.sunac.RongYDLearn;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cc.TimeLineCell;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -451,10 +454,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 2L98437J77;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = TimeLineCell/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.sunac.RongYDLearn;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cc.TimeLineCell;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -524,6 +527,7 @@
 				7BAF54D61E010E1900DFF5B0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7BAF54D71E010E1900DFF5B0 /* Build configuration list for PBXNativeTarget "TimeLineCellTests" */ = {
 			isa = XCConfigurationList;
@@ -532,6 +536,7 @@
 				7BAF54D91E010E1900DFF5B0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7BAF54DA1E010E1900DFF5B0 /* Build configuration list for PBXNativeTarget "TimeLineCellUITests" */ = {
 			isa = XCConfigurationList;
@@ -540,6 +545,7 @@
 				7BAF54DC1E010E1900DFF5B0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
