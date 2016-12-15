@@ -19,6 +19,9 @@
 		7BAF54EB1E01138900DFF5B0 /* TimeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7BAF54E91E01138900DFF5B0 /* TimeTableViewCell.xib */; };
 		7BAF54EE1E0114A900DFF5B0 /* TimeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BAF54ED1E0114A900DFF5B0 /* TimeModel.m */; };
 		7BAF54F01E014ACB00DFF5B0 /* 时间线进度.png in Resources */ = {isa = PBXBuildFile; fileRef = 7BAF54EF1E014ACB00DFF5B0 /* 时间线进度.png */; };
+		7BAF54F91E015D3800DFF5B0 /* BubbleTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BAF54F71E015D3800DFF5B0 /* BubbleTableViewCell.m */; };
+		7BAF54FA1E015D3800DFF5B0 /* BubbleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7BAF54F81E015D3800DFF5B0 /* BubbleTableViewCell.xib */; };
+		7BCCD5761E0245E400962E63 /* 气泡cell.png in Resources */ = {isa = PBXBuildFile; fileRef = 7BCCD5751E0245E400962E63 /* 气泡cell.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +64,10 @@
 		7BAF54EC1E0114A900DFF5B0 /* TimeModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimeModel.h; sourceTree = "<group>"; };
 		7BAF54ED1E0114A900DFF5B0 /* TimeModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimeModel.m; sourceTree = "<group>"; };
 		7BAF54EF1E014ACB00DFF5B0 /* 时间线进度.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "时间线进度.png"; sourceTree = "<group>"; };
+		7BAF54F61E015D3800DFF5B0 /* BubbleTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BubbleTableViewCell.h; sourceTree = "<group>"; };
+		7BAF54F71E015D3800DFF5B0 /* BubbleTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BubbleTableViewCell.m; sourceTree = "<group>"; };
+		7BAF54F81E015D3800DFF5B0 /* BubbleTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BubbleTableViewCell.xib; sourceTree = "<group>"; };
+		7BCCD5751E0245E400962E63 /* 气泡cell.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "气泡cell.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +125,9 @@
 				7BAF54E71E01138900DFF5B0 /* TimeTableViewCell.h */,
 				7BAF54E81E01138900DFF5B0 /* TimeTableViewCell.m */,
 				7BAF54E91E01138900DFF5B0 /* TimeTableViewCell.xib */,
+				7BAF54F61E015D3800DFF5B0 /* BubbleTableViewCell.h */,
+				7BAF54F71E015D3800DFF5B0 /* BubbleTableViewCell.m */,
+				7BAF54F81E015D3800DFF5B0 /* BubbleTableViewCell.xib */,
 				7BAF54EC1E0114A900DFF5B0 /* TimeModel.h */,
 				7BAF54ED1E0114A900DFF5B0 /* TimeModel.m */,
 				7BAF54B31E010E1900DFF5B0 /* Main.storyboard */,
@@ -125,6 +135,7 @@
 				7BAF54B81E010E1900DFF5B0 /* LaunchScreen.storyboard */,
 				7BAF54BB1E010E1900DFF5B0 /* Info.plist */,
 				7BAF54EF1E014ACB00DFF5B0 /* 时间线进度.png */,
+				7BCCD5751E0245E400962E63 /* 气泡cell.png */,
 				7BAF54AA1E010E1900DFF5B0 /* Supporting Files */,
 			);
 			path = TimeLineCell;
@@ -263,6 +274,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				7BAF54F01E014ACB00DFF5B0 /* 时间线进度.png in Resources */,
+				7BCCD5761E0245E400962E63 /* 气泡cell.png in Resources */,
+				7BAF54FA1E015D3800DFF5B0 /* BubbleTableViewCell.xib in Resources */,
 				7BAF54EB1E01138900DFF5B0 /* TimeTableViewCell.xib in Resources */,
 				7BAF54BA1E010E1900DFF5B0 /* LaunchScreen.storyboard in Resources */,
 				7BAF54B71E010E1900DFF5B0 /* Assets.xcassets in Resources */,
@@ -292,6 +305,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7BAF54EA1E01138900DFF5B0 /* TimeTableViewCell.m in Sources */,
+				7BAF54F91E015D3800DFF5B0 /* BubbleTableViewCell.m in Sources */,
 				7BAF54B21E010E1900DFF5B0 /* ViewController.m in Sources */,
 				7BAF54AF1E010E1900DFF5B0 /* AppDelegate.m in Sources */,
 				7BAF54EE1E0114A900DFF5B0 /* TimeModel.m in Sources */,

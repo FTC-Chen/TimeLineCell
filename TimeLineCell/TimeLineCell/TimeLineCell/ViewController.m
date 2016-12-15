@@ -9,12 +9,17 @@
 #import "ViewController.h"
 #import "TimeTableViewCell.h"
 #import "TimeModel.h"
+#import "BubbleTableViewCell.h"
 
 #define KScreenWidth [[UIScreen mainScreen] bounds].size.width
 
 #define KScreenHeight [[UIScreen mainScreen] bounds].size.height
 
-static NSString *const COUID = @"COUID";
+#define KVIEWBGColor [UIColor colorWithRed:0.95 green:0.95 blue:0.95 alpha:1]
+
+//static NSString *const COUID = @"COUID";
+
+static NSString *const COUID2 = @"COUID2";//气泡形式
 
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
 
@@ -31,6 +36,7 @@ static NSString *const COUID = @"COUID";
     
     [self setAutomaticallyAdjustsScrollViewInsets:NO];
     
+
     //本地模拟server数据
     NSArray *serverData = @[
                             @{
@@ -61,7 +67,6 @@ static NSString *const COUID = @"COUID";
                                 @"Title":@"考试",
                                 @"isFinsish":@0,
                                 },
-
                             ];
 
     for (NSDictionary *tmpDic in serverData) {
@@ -79,13 +84,25 @@ static NSString *const COUID = @"COUID";
     
     if (!_timeTableView) {
         
-        _timeTableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 64, KScreenWidth, KScreenHeight - 64) style:UITableViewStylePlain];
+        //_timeTableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 64, KScreenWidth, KScreenHeight - 64) style:UITableViewStylePlain];
+        
+        //气泡形式 根据图片调整整体布局
+        _timeTableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 64+20, KScreenWidth, KScreenHeight - 64) style:UITableViewStylePlain];
+        
+        //气泡形式需要
+        _timeTableView.backgroundColor = KVIEWBGColor;
+        self.view.backgroundColor = KVIEWBGColor;
+        
         
         [_timeTableView setDelegate:self];
         
         [_timeTableView setDataSource:self];
         
-        [_timeTableView registerNib:[UINib nibWithNibName:NSStringFromClass([TimeTableViewCell class]) bundle:nil] forCellReuseIdentifier:COUID];
+        //普通cell样式,底部横线
+        //[_timeTableView registerNib:[UINib nibWithNibName:NSStringFromClass([TimeTableViewCell class]) bundle:nil] forCellReuseIdentifier:COUID];
+        
+        //气泡样式
+        [_timeTableView registerNib:[UINib nibWithNibName:NSStringFromClass([BubbleTableViewCell class]) bundle:nil] forCellReuseIdentifier:COUID2];
         
         [_timeTableView setTableFooterView:[UIView new]];
         
@@ -105,7 +122,11 @@ static NSString *const COUID = @"COUID";
 
 - (UITableViewCell *) tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     
-    TimeTableViewCell *cell = (TimeTableViewCell *)[tableView dequeueReusableCellWithIdentifier:COUID];
+    //普通cell样式,底部横线
+    //TimeTableViewCell *cell = (TimeTableViewCell *)[tableView dequeueReusableCellWithIdentifier:COUID];
+    
+    //气泡cell样式
+    BubbleTableViewCell *cell = (BubbleTableViewCell *)[tableView dequeueReusableCellWithIdentifier:COUID2];
         
     [cell bindDataWithTimeModel:self.dataArr[indexPath.row] withRow:indexPath.row withArrCount:self.dataArr.count];
     
@@ -114,7 +135,9 @@ static NSString *const COUID = @"COUID";
 
 - (CGFloat) tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
     
-    return 60.0f;
+    //return 60.0f;
+    
+    return 80.0f;//气泡cell时
 }
 
 - (NSMutableArray *)dataArr{
